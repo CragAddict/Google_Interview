@@ -1,0 +1,10 @@
+# Google_Interview
+
+For the short solution:
+
+"any" is a built in function that takes a list, casts the elements of the list to bool and returns true if any element of the list is true.
+Into any is being passed a list/generator comprehension, what is happening here is this, 'b' is being checked for the value v-i "v-i in b"
+which returns a bool, true if the value" v-i" is in the list 'b', the value 'i' is coming from the for loop "for i in a" which is looping
+over the elements of list 'a' and pointing 'i' to the next element of the array on each iteration of the loop. What this means is that the 
+list passed to any is a list of bools where each element 'i' corresponds to an element in a and tells if "a[i]" has a complement in 'b', 
+so if "any" of these elements are true then return true.
